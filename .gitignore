@@ -1,1 +1,8 @@
 /target/
+/dist/
+.env
+.env.*
+*.key
+/settings.json
+/cache.json
+*.log

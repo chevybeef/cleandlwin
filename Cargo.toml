@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2024"
 license = "MIT"
 description = "Native Windows client for CleanDL"
+repository = "https://github.com/chevybeef/cleandlwin"
+readme = "README.md"
 build = "build.rs"
 
 [dependencies]

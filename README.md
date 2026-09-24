@@ -4,6 +4,17 @@ A classic native Windows application that organises downloaded files using your
 CleanDL server's settings. Built with Rust and Win32 common controls; no browser
 runtime or separate CLI installation is needed.
 
+## Download
+
+Download the Windows x64 ZIP from [GitHub Releases](https://github.com/chevybeef/cleandlwin/releases/latest),
+extract it, and run `cleandlwin.exe`. Windows 10 or 11 is required. Release ZIPs
+include the executable, this README, and the MIT licence. `SHA256SUMS.txt` lists
+the ZIP checksum; compare it with `Get-FileHash <downloaded-zip> -Algorithm SHA256`.
+The executable is currently unsigned.
+
+This repository contains the Windows client. An account on a compatible CleanDL
+server is needed for normal use; **Help > Demo preview** works without one.
+
 ## Build and run
 
 Requirements: Windows 10/11 x64, Rust with the MSVC target, and Visual Studio
@@ -98,6 +109,11 @@ Local files:
 Open the log using **Tools > Open Log**. Keys are not written to the log.
 
 ## Development
+
+Contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md) for setup and
+release instructions. GitHub Actions checks formatting, tests, lints, and builds
+Windows x64 on pushes to `main` and pull requests. Matching `v*` tags publish
+release downloads automatically. Desktop smoke tests remain opt-in.
 
 ```powershell
 cargo fmt --check
